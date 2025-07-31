@@ -80,7 +80,7 @@ export function EducationSection() {
           viewport={{ once: true, amount: 0.3 }}
           className=""
         >
-          <motion.h2 variants={itemVariants} className="text-4xl md:text-5xl font-bold text-center mb-16 text-emerald-500 dark:text-emerald-400">
+          <motion.h2 variants={itemVariants} className="text-4xl md:text-5xl font-bold text-center mb-16 text-emerald-500 dark:text-emerald-400 font-mono">
             Education & Learning
           </motion.h2>
 

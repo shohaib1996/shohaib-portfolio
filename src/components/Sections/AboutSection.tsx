@@ -62,7 +62,7 @@ export function AboutSection() {
           viewport={{ once: true, amount: 0.3 }}
           className="border border-border rounded-3xl bg-background/50 backdrop-blur-sm p-4 lg:p-8"
         >
-          <motion.h2 variants={itemVariants} className="text-4xl md:text-5xl font-bold text-center mb-16 text-emerald-500 dark:text-emerald-400">
+          <motion.h2 variants={itemVariants} className="text-4xl md:text-5xl font-bold text-center mb-16 text-emerald-500 dark:text-emerald-400 font-mono">
             About Me
           </motion.h2>
 

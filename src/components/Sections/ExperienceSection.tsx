@@ -112,7 +112,7 @@ export function ExperienceSection() {
             <div className="relative z-10 p-8">
               {/* Header */}
               <motion.div variants={itemVariants} className="mb-8">
-                <p className="text-4xl md:text-5xl font-bold text-center mb-16 text-emerald-500 dark:text-emerald-400">Experiences</p>
+                <p className="text-4xl md:text-5xl font-bold text-center mb-16 text-emerald-500 dark:text-emerald-400 font-mono">Experiences</p>
                 <h2 className="text-4xl md:text-4xl font-bold font-mono">
                   <span className="text-emerald-500 dark:text-emerald-400">+1.5</span>
                   <span className="text-muted-foreground"> years of </span>
