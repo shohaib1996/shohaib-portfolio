@@ -1,6 +1,6 @@
 "use client"
 
-import { motion, easeOut } from "framer-motion" // <-- import easeOut
+import { motion, easeOut } from "framer-motion"
 import { Card } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Building2, MapPin, Calendar, Briefcase } from "lucide-react"
@@ -90,7 +90,7 @@ export function ExperienceSection() {
       y: 0,
       transition: {
         duration: 0.8,
-        ease: easeOut, // <-- use imported easeOut function
+        ease: easeOut,
       },
     },
   }
@@ -106,13 +106,124 @@ export function ExperienceSection() {
           className=""
         >
           <div className="border border-border rounded-3xl backdrop-blur-sm relative overflow-hidden">
-            {/* Background Pattern */}
-           
+            {/* Top Right Pizza Quarter Circle Patterns */}
+            <div className="absolute top-0 right-0 w-48 h-48 pointer-events-none">
+              {/* Quarter Circle 1 - Largest */}
+              <motion.div
+                animate={{
+                  scale: [1, 1.3, 1],
+                  opacity: [0.2, 0.5, 0.2],
+                }}
+                transition={{
+                  duration: 6,
+                  repeat: Number.POSITIVE_INFINITY,
+                  ease: "easeInOut",
+                }}
+                className="absolute top-0 right-0 w-40 h-40 bg-emerald-500/10 dark:bg-emerald-400/15"
+                style={{
+                  borderRadius: "0 0 0 100%",
+                }}
+              />
+
+              {/* Quarter Circle 2 - Medium */}
+              <motion.div
+                animate={{
+                  scale: [1.3, 1, 1.3],
+                  opacity: [0.5, 0.2, 0.5],
+                }}
+                transition={{
+                  duration: 6,
+                  repeat: Number.POSITIVE_INFINITY,
+                  ease: "easeInOut",
+                  delay: 1.5,
+                }}
+                className="absolute top-0 right-0 w-32 h-32 bg-emerald-500/15 dark:bg-emerald-400/20"
+                style={{
+                  borderRadius: "0 0 0 100%",
+                }}
+              />
+
+              {/* Quarter Circle 3 - Small */}
+              <motion.div
+                animate={{
+                  scale: [1, 1.5, 1],
+                  opacity: [0.3, 0.6, 0.3],
+                }}
+                transition={{
+                  duration: 6,
+                  repeat: Number.POSITIVE_INFINITY,
+                  ease: "easeInOut",
+                  delay: 3,
+                }}
+                className="absolute top-0 right-0 w-24 h-24 bg-emerald-500/20 dark:bg-emerald-400/25"
+                style={{
+                  borderRadius: "0 0 0 100%",
+                }}
+              />
+
+              {/* Quarter Circle 4 - Smallest */}
+              <motion.div
+                animate={{
+                  scale: [1.4, 1, 1.4],
+                  opacity: [0.6, 0.3, 0.6],
+                }}
+                transition={{
+                  duration: 6,
+                  repeat: Number.POSITIVE_INFINITY,
+                  ease: "easeInOut",
+                  delay: 4.5,
+                }}
+                className="absolute top-0 right-0 w-16 h-16 bg-emerald-500/25 dark:bg-emerald-400/30"
+                style={{
+                  borderRadius: "0 0 0 100%",
+                }}
+              />
+
+              {/* Additional floating quarter circles for depth */}
+              <motion.div
+                animate={{
+                  scale: [1, 1.2, 1],
+                  opacity: [0.15, 0.35, 0.15],
+                }}
+                transition={{
+                  duration: 8,
+                  repeat: Number.POSITIVE_INFINITY,
+                  ease: "easeInOut",
+                  delay: 1,
+                }}
+                className="absolute top-2 right-2 w-12 h-12 bg-emerald-500/15 dark:bg-emerald-400/20"
+                style={{
+                  borderRadius: "0 0 0 100%",
+                }}
+              />
+
+              <motion.div
+                animate={{
+                  scale: [1.2, 1, 1.2],
+                  opacity: [0.4, 0.2, 0.4],
+                }}
+                transition={{
+                  duration: 7,
+                  repeat: Number.POSITIVE_INFINITY,
+                  ease: "easeInOut",
+                  delay: 2,
+                }}
+                className="absolute top-4 right-4 w-8 h-8 bg-emerald-500/30 dark:bg-emerald-400/35"
+                style={{
+                  borderRadius: "0 0 0 100%",
+                }}
+              />
+            </div>
+
+            {/* Subtle gradient overlay */}
+            <div className="absolute inset-0 bg-gradient-to-bl from-emerald-500/5 via-transparent to-transparent dark:from-emerald-400/10 rounded-3xl" />
 
             <div className="relative z-10 p-8">
               {/* Header */}
               <motion.div variants={itemVariants} className="mb-8">
-                <p className="text-4xl md:text-5xl font-bold text-center mb-16 text-emerald-500 dark:text-emerald-400 font-mono">Experiences</p>
+                <p className="text-4xl md:text-5xl font-bold text-center mb-16 text-emerald-500 dark:text-emerald-400 font-mono">
+                  Experiences
+                </p>
                 <h2 className="text-4xl md:text-4xl font-bold font-mono">
                   <span className="text-emerald-500 dark:text-emerald-400">+1.5</span>
                   <span className="text-muted-foreground"> years of </span>

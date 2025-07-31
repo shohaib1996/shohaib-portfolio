@@ -1,6 +1,6 @@
 "use client"
 
-import { motion, easeOut } from "framer-motion" // <-- import easeOut
+import { motion, easeOut } from "framer-motion"
 import { Card } from "@/components/ui/card"
 import { GraduationCap, Award, BookOpen } from "lucide-react"
 
@@ -65,7 +65,7 @@ export function EducationSection() {
       y: 0,
       transition: {
         duration: 0.8,
-        ease: easeOut, // <-- use imported easeOut function
+        ease: easeOut,
       },
     },
   }
@@ -80,26 +80,82 @@ export function EducationSection() {
           viewport={{ once: true, amount: 0.3 }}
           className=""
         >
-          <motion.h2 variants={itemVariants} className="text-4xl md:text-5xl font-bold text-center mb-16 text-emerald-500 dark:text-emerald-400 font-mono">
+          <motion.h2
+            variants={itemVariants}
+            className="text-4xl md:text-5xl font-bold text-center mb-16 text-emerald-500 dark:text-emerald-400 font-mono"
+          >
             Education & Learning
           </motion.h2>
 
           <div className="grid lg:grid-cols-2 gap-8">
             {/* Education Column */}
             <motion.div variants={itemVariants}>
-              <Card className="h-full border border-border rounded-3xl overflow-hidden">
-                <div className=" p-6">
+              <Card className="h-full border border-border rounded-3xl overflow-hidden relative">
+                {/* Circular Patterns for Formal Education */}
+                <div className="absolute -top-6 -right-6 w-32 h-32 pointer-events-none overflow-hidden">
+                  <motion.div
+                    animate={{
+                      scale: [1, 1.2, 1],
+                      opacity: [0.3, 0.6, 0.3],
+                    }}
+                    transition={{
+                      duration: 4,
+                      repeat: Number.POSITIVE_INFINITY,
+                      ease: "easeInOut",
+                    }}
+                    className="absolute top-0 right-0 w-24 h-24 bg-emerald-500/15 dark:bg-emerald-400/20 rounded-full"
+                  />
+                  <motion.div
+                    animate={{
+                      scale: [1.2, 1, 1.2],
+                      opacity: [0.6, 0.3, 0.6],
+                    }}
+                    transition={{
+                      duration: 4,
+                      repeat: Number.POSITIVE_INFINITY,
+                      ease: "easeInOut",
+                      delay: 1,
+                    }}
+                    className="absolute top-2 right-2 w-16 h-16 bg-emerald-500/20 dark:bg-emerald-400/25 rounded-full"
+                  />
+                  <motion.div
+                    animate={{
+                      scale: [1, 1.4, 1],
+                      opacity: [0.4, 0.7, 0.4],
+                    }}
+                    transition={{
+                      duration: 4,
+                      repeat: Number.POSITIVE_INFINITY,
+                      ease: "easeInOut",
+                      delay: 2,
+                    }}
+                    className="absolute top-4 right-4 w-10 h-10 bg-emerald-500/25 dark:bg-emerald-400/30 rounded-full"
+                  />
+                  <motion.div
+                    animate={{
+                      scale: [1.3, 1, 1.3],
+                      opacity: [0.7, 0.4, 0.7],
+                    }}
+                    transition={{
+                      duration: 4,
+                      repeat: Number.POSITIVE_INFINITY,
+                      ease: "easeInOut",
+                      delay: 3,
+                    }}
+                    className="absolute top-6 right-6 w-6 h-6 bg-emerald-500/30 dark:bg-emerald-400/35 rounded-full"
+                  />
+                </div>
+
+                <div className="p-6 relative z-10">
                   <div className="flex items-center mb-6">
                     <div className="p-2 bg-primary/20 rounded-lg mr-3">
                       <GraduationCap className="h-6 w-6 text-emerald-500 dark:text-emerald-400" />
                     </div>
                     <h3 className="text-2xl font-semibold font-mono">Formal Education</h3>
                   </div>
-
                   <div className="relative">
                     {/* Timeline line */}
                     <div className="absolute left-4 top-0 bottom-0 w-0.5 bg-emerald-100 dark:bg-emerald-300" />
-
                     <div className="space-y-6">
                       {education.map((edu, index) => (
                         <motion.div
@@ -112,14 +168,15 @@ export function EducationSection() {
                         >
                           {/* Timeline dot */}
                           <div className="absolute left-2.5 top-1 w-3 h-3 bg-emerald-500 dark:bg-emerald-400 rounded-full border-2 border-background" />
-
                           <div className="space-y-1 font-mono">
                             <div className="flex items-start gap-3">
                               <span className="text-sm text-muted-foreground font-medium whitespace-nowrap">
                                 {edu.period}:
                               </span>
                               <div className="flex-1">
-                                <h4 className="font-semibold text-emerald-500 dark:text-emerald-400 mb-1">{edu.institution}</h4>
+                                <h4 className="font-semibold text-emerald-500 dark:text-emerald-400 mb-1">
+                                  {edu.institution}
+                                </h4>
                                 <p className="text-foreground font-medium">{edu.degree}</p>
                                 <p className="text-sm text-muted-foreground">{edu.result}</p>
                               </div>
@@ -135,19 +192,73 @@ export function EducationSection() {
 
             {/* Certifications & Learning Column */}
             <motion.div variants={itemVariants}>
-              <Card className="h-full border border-border rounded-3xl overflow-hidden">
-                <div className="bg-gradient-to-br from-secondary/5 to-secondary/10 p-6">
+              <Card className="h-full border border-border rounded-3xl overflow-hidden relative">
+                {/* Circular Patterns for Self-Learning */}
+                <div className="absolute -top-6 -right-6 w-32 h-32 pointer-events-none overflow-hidden">
+                  <motion.div
+                    animate={{
+                      scale: [1.1, 1.3, 1.1],
+                      opacity: [0.4, 0.7, 0.4],
+                    }}
+                    transition={{
+                      duration: 5,
+                      repeat: Number.POSITIVE_INFINITY,
+                      ease: "easeInOut",
+                      delay: 0.5,
+                    }}
+                    className="absolute top-0 right-0 w-24 h-24 bg-emerald-500/15 dark:bg-emerald-400/20 rounded-full"
+                  />
+                  <motion.div
+                    animate={{
+                      scale: [1.3, 1.1, 1.3],
+                      opacity: [0.7, 0.4, 0.7],
+                    }}
+                    transition={{
+                      duration: 5,
+                      repeat: Number.POSITIVE_INFINITY,
+                      ease: "easeInOut",
+                      delay: 1.5,
+                    }}
+                    className="absolute top-2 right-2 w-16 h-16 bg-emerald-500/20 dark:bg-emerald-400/25 rounded-full"
+                  />
+                  <motion.div
+                    animate={{
+                      scale: [1, 1.5, 1],
+                      opacity: [0.3, 0.6, 0.3],
+                    }}
+                    transition={{
+                      duration: 5,
+                      repeat: Number.POSITIVE_INFINITY,
+                      ease: "easeInOut",
+                      delay: 2.5,
+                    }}
+                    className="absolute top-4 right-4 w-10 h-10 bg-emerald-500/25 dark:bg-emerald-400/30 rounded-full"
+                  />
+                  <motion.div
+                    animate={{
+                      scale: [1.4, 1, 1.4],
+                      opacity: [0.6, 0.3, 0.6],
+                    }}
+                    transition={{
+                      duration: 5,
+                      repeat: Number.POSITIVE_INFINITY,
+                      ease: "easeInOut",
+                      delay: 3.5,
+                    }}
+                    className="absolute top-6 right-6 w-6 h-6 bg-emerald-500/30 dark:bg-emerald-400/35 rounded-full"
+                  />
+                </div>
+
+                <div className="bg-gradient-to-br from-secondary/5 to-secondary/10 p-6 relative z-10">
                   <div className="flex items-center mb-6">
                     <div className="p-2 bg-primary/20 rounded-lg mr-3">
                       <Award className="h-6 w-6 text-emerald-500 dark:text-emerald-400" />
                     </div>
                     <h3 className="text-2xl font-semibold font-mono">Self-Learning & Development</h3>
                   </div>
-
                   <div className="relative">
                     {/* Timeline line */}
                     <div className="absolute left-4 top-0 bottom-0 w-0.5 bg-emerald-100 dark:bg-emerald-300" />
-
                     <div className="space-y-6">
                       {certifications.map((cert, index) => (
                         <motion.div
@@ -159,15 +270,16 @@ export function EducationSection() {
                           className="relative pl-8"
                         >
                           {/* Timeline dot */}
-                            <div className="absolute left-2.5 top-1 w-3 h-3 bg-emerald-500 dark:bg-emerald-400 rounded-full border-2 border-background" />
-
+                          <div className="absolute left-2.5 top-1 w-3 h-3 bg-emerald-500 dark:bg-emerald-400 rounded-full border-2 border-background" />
                           <div className="space-y-1 font-mono">
                             <div className="flex items-start gap-3">
                               <span className="text-sm text-muted-foreground font-medium whitespace-nowrap">
                                 {cert.period}:
                               </span>
                               <div className="flex-1">
-                                <h4 className="font-semibold mb-1 text-emerald-500 dark:text-emerald-400">{cert.title}</h4>
+                                <h4 className="font-semibold mb-1 text-emerald-500 dark:text-emerald-400">
+                                  {cert.title}
+                                </h4>
                                 <p className="text-sm text-muted-foreground leading-relaxed">{cert.description}</p>
                               </div>
                             </div>
