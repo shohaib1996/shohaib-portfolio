@@ -47,7 +47,7 @@ export function ProjectsSection() {
       title: "MeetHUb",
       description:
         "A comprehensive meeting room booking system with calendar integration and resource management.",
-      image: "https://i.imgur.com/i4d1PUs.png",
+      image: "https://i.imgur.com/BcA4VUa.png",
       liveUrl: "https://dazzling-mooncake-242921.netlify.app/",
       frontendUrl: "https://github.com/shohaib1996/meethub-client",
       backendUrl: "https://github.com/shohaib1996/meeting-room-system",
@@ -77,7 +77,7 @@ export function ProjectsSection() {
       title: "MeckKey Heaven",
       description:
         "An e-commerce platform specialized in mechanical keyboards with detailed product customization.",
-      image: "https://i.imgur.com/0eboDiz.png",
+      image: "https://i.imgur.com/lpbETWU.png",
       liveUrl: "https://mechkey-heaven.vercel.app/",
       frontendUrl: "https://github.com/shohaib1996/mechkey-heaven",
       backendUrl: "https://github.com/shohaib1996/mechanicalKeyboard-backend",
@@ -154,14 +154,7 @@ export function ProjectsSection() {
                               alt={projects[currentProject].title}
                               height={800}
                               width={500}
-                              className="w-full h-auto object-cover"
-                            />
-                            <Image
-                              src={projects[currentProject].image || "/placeholder.svg"}
-                              alt={projects[currentProject].title}
-                              height={800}
-                              width={500}
-                              className="w-full h-auto object-cover"
+                              className="w-full h-auto object-cover scroll"
                             />
                           </div>
                         </div>
