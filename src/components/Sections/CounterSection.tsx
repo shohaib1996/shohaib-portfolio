@@ -10,7 +10,7 @@ export function CounterSection() {
   const counters = [
     {
       icon: Code,
-      end: 1.5,
+      end: 2.5,
       suffix: "+",
       label: "Years Experience",
       color: "text-primary",
