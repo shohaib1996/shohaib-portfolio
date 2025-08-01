@@ -3,7 +3,7 @@
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
-import { Facebook, Twitter, Linkedin, Github, Code2 } from "lucide-react";
+import { Facebook, Linkedin, Github, Code2 } from "lucide-react";
 import { ModeToggle } from "../ModeToggle";
 
 export function Navbar() {
@@ -46,7 +46,7 @@ export function Navbar() {
         isScrolled ? "bg-background/80 backdrop-blur-md" : "bg-transparent"
       }`}
     >
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-3">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-3 font-mono">
         <div className="relative">
           <div className="glowing-border">
             <div className="glowing-border-content bg-background rounded-3xl">

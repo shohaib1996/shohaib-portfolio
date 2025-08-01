@@ -132,7 +132,7 @@ export function ContactSection() {
                       <Card className="border border-border rounded-3xl">
                         <CardHeader>
                           <CardTitle className="text-3xl md:text-4xl font-bold text-emerald-500 dark:text-emerald-400 mb-4">
-                            Let's Connect
+                            Let&apos;s Connect
                           </CardTitle>
                         </CardHeader>
                         <CardContent>

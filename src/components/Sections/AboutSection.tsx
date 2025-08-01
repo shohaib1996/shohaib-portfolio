@@ -152,7 +152,7 @@ export function AboutSection() {
                 <motion.div variants={itemVariants} className="space-y-6">
                   <div className="space-y-4">
                     <h3 className="text-2xl font-semibold font-mono">
-                      Hello! I'm Shohaib 👋
+                      Hello! I&apos;m Shohaib 👋
                     </h3>
                     <p className="text-md text-muted-foreground leading-relaxed font-mono">
                       A passionate Full Stack Developer with{" "}
@@ -160,7 +160,7 @@ export function AboutSection() {
                         1.5 years of experience
                       </span>{" "}
                       in creating digital solutions that make a difference.
-                      Despite being relatively new to the field, I've quickly
+                      Despite being relatively new to the field, I&apos;ve quickly
                       developed a strong foundation in modern web technologies
                       and have a genuine enthusiasm for learning.
                     </p>
@@ -171,7 +171,7 @@ export function AboutSection() {
                       <span className="text-emerald-500 dark:text-emerald-400 font-semibold">
                         React, Node.js, and TypeScript, NextJs etc
                       </span>
-                      , and I'm always eager to explore new technologies and
+                      , and I&apos;m always eager to explore new technologies and
                       frameworks.
                     </p>
                     <p className="text-md text-muted-foreground leading-relaxed font-mono">
