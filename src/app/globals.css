@@ -239,3 +239,35 @@ html {
   }
 }
 
+.subtle-glow-border {
+  position: relative;
+  border-radius: 1rem;
+  padding: 2px;
+  background: linear-gradient(var(--angle), transparent 0%, rgba(16, 185, 129, 0.4) 50%, transparent 100%);
+  animation: rotate-border 8s linear infinite;
+}
+
+.subtle-glow-border-content {
+  background: hsl(var(--background));
+  border-radius: calc(1rem - 1px);
+  height: 100%;
+  width: 100%;
+  position: relative;
+  z-index: 1;
+}
+
+/* Pulsing glow effect */
+.pulse-glow {
+  background-color: transparent !important;
+  animation: pulse-glow 3s ease-in-out infinite;
+}
+
+@keyframes pulse-glow {
+  0%,
+  100% {
+    box-shadow: 0 0 20px rgba(16, 185, 129, 0.3);
+  }
+  50% {
+    box-shadow: 0 0 40px rgba(16, 185, 129, 0.6), 0 0 60px rgba(16, 185, 129, 0.3);
+  }
+}

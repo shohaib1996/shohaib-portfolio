@@ -97,7 +97,7 @@ export function AboutSection() {
     <section id="about" className="">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="glowing-border">
-          <div className="glowing-bordr-content bg-background rounded-3xl">
+          <div className="glowing-border-content bg-background rounded-3xl">
             <motion.div
               variants={containerVariants}
               initial="hidden"
@@ -213,21 +213,25 @@ export function AboutSection() {
                         transition={{ delay: index * 0.1 }}
                         viewport={{ once: true }}
                       >
-                        <Card className="h-full hover:shadow-lg transition-all duration-300 group cursor-pointer">
-                          <CardContent className="p-2 text-center">
-                            <div className="mb-4">
-                              <div className="p-3 bg-primary/10 rounded-full w-fit mx-auto group-hover:bg-primary/20 transition-colors">
-                                <highlight.icon className="h-6 w-6 text-emerald-500 dark:text-emerald-400" />
-                              </div>
-                            </div>
-                            <h4 className="font-semibold mb-2 group-hover:text-primary transition-colors font-mono">
-                              {highlight.title}
-                            </h4>
-                            <p className="text-sm text-muted-foreground leading-relaxed">
-                              {highlight.description}
-                            </p>
-                          </CardContent>
-                        </Card>
+                        <div className="subtle-glow-border">
+                          <div className="sublte-glow-content bg-background rounded-2xl">
+                            <Card className="h-full hover:shadow-lg transition-all duration-300 group cursor-pointer">
+                              <CardContent className="p-2 text-center">
+                                <div className="mb-4">
+                                  <div className="p-3 bg-primary/10 rounded-full w-fit mx-auto group-hover:bg-primary/20 transition-colors pulse-glow">
+                                    <highlight.icon className="h-6 w-6 text-emerald-500 dark:text-emerald-400" />
+                                  </div>
+                                </div>
+                                <h4 className="font-semibold mb-2 group-hover:text-primary transition-colors font-mono">
+                                  {highlight.title}
+                                </h4>
+                                <p className="text-sm text-muted-foreground leading-relaxed">
+                                  {highlight.description}
+                                </p>
+                              </CardContent>
+                            </Card>
+                          </div>
+                        </div>
                       </motion.div>
                     ))}
                   </div>
