@@ -184,17 +184,17 @@ export function HeroSection() {
     },
   };
 
-  const floatingVariants = {
-    animate: {
-      y: [-20, 20, -20],
-      rotate: [-5, 5, -5],
-      transition: {
-        duration: 6,
-        repeat: Infinity,
-        ease: "easeInOut",
-      },
-    },
-  };
+  // const floatingVariants = {
+  //   animate: {
+  //     y: [-20, 20, -20],
+  //     rotate: [-5, 5, -5],
+  //     transition: {
+  //       duration: 6,
+  //       repeat: Infinity,
+  //       ease: "easeInOut",
+  //     },
+  //   },
+  // };
 
   return (
     <section
@@ -532,7 +532,7 @@ export function HeroSection() {
             onClick={(e) => e.stopPropagation()}
           >
             <iframe
-              src="https://www.youtube.com/embed/p80VyQ5wLvg?si=W12y3cmVovu8UmfV"
+              src="https://drive.google.com/file/d/1iWE9kkWGlIZGJpsP14wRn4UBIGdROaKv/preview"
               title="Introduction Video"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
