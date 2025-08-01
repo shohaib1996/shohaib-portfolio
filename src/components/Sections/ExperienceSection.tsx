@@ -202,40 +202,6 @@ export function ExperienceSection() {
                     }}
                   />
 
-                  {/* Additional floating quarter circles for depth */}
-                  <motion.div
-                    animate={{
-                      scale: [1, 1.2, 1],
-                      opacity: [0.15, 0.35, 0.15],
-                    }}
-                    transition={{
-                      duration: 8,
-                      repeat: Number.POSITIVE_INFINITY,
-                      ease: "easeInOut",
-                      delay: 1,
-                    }}
-                    className="absolute top-2 right-2 w-12 h-12 bg-emerald-500/15 dark:bg-emerald-400/20"
-                    style={{
-                      borderRadius: "0 0 0 100%",
-                    }}
-                  />
-
-                  <motion.div
-                    animate={{
-                      scale: [1.2, 1, 1.2],
-                      opacity: [0.4, 0.2, 0.4],
-                    }}
-                    transition={{
-                      duration: 7,
-                      repeat: Number.POSITIVE_INFINITY,
-                      ease: "easeInOut",
-                      delay: 2,
-                    }}
-                    className="absolute top-4 right-4 w-8 h-8 bg-emerald-500/30 dark:bg-emerald-400/35"
-                    style={{
-                      borderRadius: "0 0 0 100%",
-                    }}
-                  />
                 </div>
 
                 {/* Subtle gradient overlay */}

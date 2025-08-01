@@ -30,10 +30,12 @@ export function Navbar() {
   ];
 
   const socialLinks = [
-    { href: "https://facebook.com", icon: Facebook },
-    { href: "https://twitter.com", icon: Twitter },
-    { href: "https://linkedin.com", icon: Linkedin },
-    { href: "https://github.com", icon: Github },
+    { href: "https://www.facebook.com/ananta.asim.5/", icon: Facebook },
+    {
+      href: "https://www.linkedin.com/in/shohaib-hossain-0792041ba/",
+      icon: Linkedin,
+    },
+    { href: "https://github.com/shohaib1996", icon: Github },
   ];
 
   return (
@@ -154,6 +156,7 @@ export function Navbar() {
                 <div className="flex items-center space-x-4 pt-3 border-t border-border">
                   {socialLinks.map((social, index) => (
                     <Link
+                      target="_blank"
                       key={index}
                       href={social.href}
                       className="text-muted-foreground hover:text-primary transition-colors"

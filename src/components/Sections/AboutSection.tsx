@@ -191,7 +191,7 @@ export function AboutSection() {
                       className="group bg-emerald-600 hover:bg-emerald-700"
                       asChild
                     >
-                      <Link href="/resume.pdf" download className="text-white">
+                      <Link target="_blank" href="https://docs.google.com/document/d/1vlTbT1EkcK_NaP2Q7Gq2h8RUVl2G6KavN12s71381Sk/edit?usp=sharing" download className="text-white font-mono">
                         <Download className="mr-2 h-5 w-5 group-hover:animate-bounce" />
                         Download Resume
                       </Link>

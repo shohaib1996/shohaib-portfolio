@@ -3,13 +3,13 @@
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { Github, Linkedin, Mail, Twitter } from "lucide-react";
+import Link from "next/link";
 
 export function Footer() {
   const socialLinks = [
-    { icon: Github, href: "https://github.com", label: "GitHub" },
-    { icon: Linkedin, href: "https://linkedin.com", label: "LinkedIn" },
-    { icon: Twitter, href: "https://twitter.com", label: "Twitter" },
-    { icon: Mail, href: "mailto:john@example.com", label: "Email" },
+    { icon: Github, href: "https://github.com/shohaib1996", label: "GitHub" },
+    { icon: Linkedin, href: "https://www.linkedin.com/in/shohaib-hossain-0792041ba/", label: "LinkedIn" },
+    { icon: Mail, href: "mailto:khanshohaibhossain@gmail.com", label: "Email" },
   ];
 
   const quickLinks = [
@@ -122,16 +122,16 @@ export function Footer() {
                     variant="outline"
                     size="icon"
                     asChild
-                    className="hover:bg-primary hover:text-primary-foreground transition-colors bg-transparent hover:shadow-lg hover:shadow-emerald-500/25 dark:hover:shadow-white/25 border-emerald-200 dark:border-white/20"
+                    className="hover:bg-emerald-500 hover:text-primary-foreground transition-colors bg-transparent hover:shadow-lg hover:shadow-emerald-500/25 dark:hover:shadow-white/25 dark:hover:text-white border-emerald-200 dark:border-white/20"
                   >
-                    <a
+                    <Link
                       href={social.href}
                       target="_blank"
                       rel="noopener noreferrer"
                       aria-label={social.label}
                     >
                       <social.icon className="h-5 w-5" />
-                    </a>
+                    </Link>
                   </Button>
                 </motion.div>
               ))}

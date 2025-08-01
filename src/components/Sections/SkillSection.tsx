@@ -120,7 +120,7 @@ export function SkillsSection() {
               viewport={{ once: true, amount: 0.3 }}
             >
               <div className="border border-border rounded-3xl backdrop-blur-sm relative overflow-hidden">
-                <div className="absolute -top-20 -left-20 w-40 h-40 sm:w-52 sm:h-52 lg:w-64 lg:h-64 pointer-events-none">
+                <div className="absolute -top-32 -left-32 w-40 h-40 sm:w-52 sm:h-52 lg:w-64 lg:h-64 pointer-events-none">
                   {/* Responsive animated rings */}
                   <motion.div
                     animate={{

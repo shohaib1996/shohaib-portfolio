@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import { Download, Play } from "lucide-react";
 import Image from "next/image";
 import { useState, useEffect } from "react";
+import Link from "next/link";
 
 export function HeroSection() {
   const [displayText, setDisplayText] = useState("");
@@ -500,10 +501,10 @@ export function HeroSection() {
                         className="text-left p-0 h-auto font-mono"
                         asChild
                       >
-                        <a href="/resume.pdf" download>
+                        <Link target="_blank" href="https://docs.google.com/document/d/1vlTbT1EkcK_NaP2Q7Gq2h8RUVl2G6KavN12s71381Sk/edit?usp=sharing" download>
                           <Download className="h-4 w-4 mr-2 text-emerald-500 dark:text-emerald-400" />
-                          [ Download my CV ]
-                        </a>
+                          [ Download my Resume ]
+                        </Link>
                       </Button>
                     </motion.div>
                   </div>
