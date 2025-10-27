@@ -73,20 +73,20 @@ export function ContactSection() {
     {
       icon: Phone,
       label: "Phone Number",
-      value: "+880 1234-567890",
-      href: "tel:+8801234567890",
+      value: "+880 1303429044",
+      href: "tel:+8801303429044",
     },
     {
       icon: Mail,
       label: "Email",
-      value: "james.dev@example.com",
-      href: "mailto:james.dev@example.com",
+      value: "khanshohaibhossain@gmail.com",
+      href: "mailto:khanshohaibhossain@gmail.com",
     },
     {
       icon: MessageSquare,
       label: "WhatsApp",
-      value: "+880 1234-567890",
-      href: "https://wa.me/8801234567890",
+      value: "+880 1303429044",
+      href: "https://wa.me/8801303429044",
     },
     {
       icon: MapPin,

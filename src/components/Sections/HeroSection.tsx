@@ -412,7 +412,7 @@ export function HeroSection() {
 
                       {/* Main Heading */}
                       <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
-                        Junior{" "}
+                        {" "}
                         <span className="bg-gradient-to-r from-emerald-500 to-teal-600 dark:from-emerald-400 dark:to-teal-500 bg-clip-text text-transparent">
                           {"{Full Stack}"}
                         </span>
